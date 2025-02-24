@@ -53,7 +53,7 @@ function gamewin(){
   || (content2.includes("images/catpaw.png") && content5.includes("images/catpaw.png") && content8.includes("images/catpaw.png"))
   || (content3.includes("images/catpaw.png") && content6.includes("images/catpaw.png") && content9.includes("images/catpaw.png"))){
     window.location.href = "i-win.html";
-  } else if (turn == 9) {
+  } else if (turn > 9) {
     window.location.href = "draw.html";
   } 
 }
