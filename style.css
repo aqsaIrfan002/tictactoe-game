@@ -1,0 +1,195 @@
+html{
+    scroll-behavior: smooth;
+  }
+
+body {
+    margin: 10px;
+    padding-top: 8px;
+    font-family: "Capriola", serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #FBF6DB;
+      
+  }
+
+  .window-header {
+    -webkit-app-region: drag;
+  }
+
+  .window-title {
+    font-size: 36px;
+    color: #462418;
+  }
+
+  .window-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 78px;
+    height: 34px;
+    float: right;
+  }
+
+  .window-buttons button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    all: unset;  
+    cursor: pointer; 
+    width: 35px;
+    height: 35px;
+    -webkit-app-region: no-drag;
+  }
+
+  .window-buttons img {
+      width: 100%; 
+      height: auto;
+      display: block;
+  }
+
+  .window-buttons button:hover {
+    transform: scale(1.05);
+  }
+
+  .window-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background: url("images/cafe.png") no-repeat center center;
+    background-size: contain;
+    width: 409px;
+    height: 409px;
+    margin-top: 12px;
+    position: relative;
+  }
+
+  .link-to-gamepage {
+    position: absolute;
+    z-index: 1;
+  }
+
+  .start-button{
+    width: 153px;
+    height: 47px;
+    font-size: 24px;
+    font-family: "Capriola", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #462418;
+    background-color: #F8DAA6;
+    border: solid 3px;
+    border-color: #462418;
+    border-radius: 3px;
+  }
+
+  .start-button:hover {
+    transform: scale(1.03);
+  }
+
+  .gameboard {
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+    width: 284px;
+    height: 284px;
+    background-color: #F6D089;
+    opacity: 0.95;
+    border-radius: 10px;
+    position: relative;
+  }
+
+  .tictactoe-grid {
+    position: absolute;
+    z-index: 0;
+  }
+
+  .tictactoe-block {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 93px;
+    height: 93px;
+    z-index: 1;
+  }
+
+  .tictactoe-symbols {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 190px;
+    height: 36px;
+    background-color: #FBF6DB;
+    border: solid 2px;
+    border-color: #462418;
+    border-radius: 10px;
+  }
+
+  .tictactoe-symbols img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .tictactoe-symbols p {
+    color: #462418;
+    font-size: 12px;
+    margin-left: -30px;
+  }
+
+  .resultboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 290px;
+    height: 290px;
+    padding: 20px;
+    background-color: #F6D089;
+    opacity: 0.95;
+    border: solid 2px;
+    border-color: #462418;
+    border-radius: 10px;
+    position: relative;
+  }
+
+  .resultboard p {
+    text-align: center;
+  }
+
+  .result-title {
+    font-size: 24px;
+  }
+
+  .result-subtitle {
+    margin-top: -2px;
+  }
+
+  .result-symbol {
+    width: 85px;
+    height: 85px;
+    opacity: 1.0;
+    animation: hoverAnimation 1.3s ease-in-out infinite;
+  }
+
+  @keyframes hoverAnimation {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+    100% { transform: translateY(0); }
+  }
+
+  .claim-button {
+    width: 153px;
+    height: 46px;
+    font-size: 22px;
+    font-family: "Capriola", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #462418;
+    margin-top: 10px;
+    background-color: #FBF6DB;
+    border: solid 3px;
+    border-color: #462418;
+    border-radius: 3px;
+  }
+
+  .claim-button:hover {
+    transform: scale(1.03);
+  }

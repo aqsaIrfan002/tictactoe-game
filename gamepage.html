@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desktop App</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Capriola&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="window">
+    <div class="window-header">
+        <span class="window-title">Tic Tac Toe</span>
+        <span class="window-buttons">
+            <button class="minimize"><img src="images/Minus.png" alt=""></button>
+            <button class="close"><img src="images/X.png" alt=""></button>
+        </span>
+    </div>
+  </div>
+  <div class="window-content">
+    <div class="gameboard">
+        <img src="images/grid.png" alt="" class="tictactoe-grid">
+        <div class="tictactoe-block" id="block1" onclick="gameplay('1')">
+
+        </div>
+        <div class="tictactoe-block" id="block2" onclick="gameplay('2')">
+            
+        </div>
+        <div class="tictactoe-block" id="block3" onclick="gameplay('3')">
+            
+        </div>
+        <div class="tictactoe-block" id="block4" onclick="gameplay('4')">
+            
+        </div>
+        <div class="tictactoe-block" id="block5" onclick="gameplay('5')">
+            
+        </div>
+        <div class="tictactoe-block" id="block6" onclick="gameplay('6')">
+            
+        </div>
+        <div class="tictactoe-block" id="block7" onclick="gameplay('7')">
+            
+        </div>
+        <div class="tictactoe-block" id="block8" onclick="gameplay('8')">
+           
+        </div>
+        <div class="tictactoe-block" id="block9" onclick="gameplay('9')">
+            
+        </div>
+    </div>
+    <div class="tictactoe-symbols">
+        <img src="images/pretzel.png" alt="" id="pretzel">
+        <p>-you</p>
+        <img src="images/catpaw.png" alt="" id="catpaw">
+        <p>-me</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
